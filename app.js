@@ -1,27 +1,20 @@
-//mousetable utside the game function to avid problems or name conflict futher down
 
-
-   const mousetable = Array.from(document.getElementsByClassName('box'));
+// Wrap my code in a function
+(function() {
+//mousetable function to avid problems or name conflict futher down
+   
+const mousetable = Array.from(document.getElementsByClassName('box'));
          //   MouseOver & mouseOut for all spot's
    mousetable.forEach(box => {box.addEventListener('mouseover',myfunction1)});
    function myfunction1 () {
-     
    this.classList.add('boxHuman')
- 
-}
- 
+   }
    mousetable.forEach(box => {box.addEventListener('mouseout',myfunction2)});
    function myfunction2 () {
-  
    this.classList.remove('boxHuman')
     console.log('mouseout','mouseinn')
 }
 
-
-
-
-// Wrap my code in a function
-(function() {
     // Get a table to play on[array]
     const table = Array.from(document.querySelectorAll('.box'));
 
