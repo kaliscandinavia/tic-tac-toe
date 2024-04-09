@@ -60,7 +60,7 @@ const mousetable = Array.from(document.getElementsByClassName('box'));
             setTimeout(() => {
                 alert(`Player ${currenP} wins! Restart?`);
                 restart();
-            }, 0);
+            },100);
             return;
         }
 
@@ -70,7 +70,7 @@ const mousetable = Array.from(document.getElementsByClassName('box'));
             setTimeout(() => {
                 alert('Draw! Restart?');
                 restart();
-            }, 0); // Using setTimeout so 'boxComputer' got time to add itself to table.Otherwise alert shows up and block 'boxComputer' beeing added to table.
+            }, 100); // Using setTimeout so 'boxComputer' got time to add itself to table.Otherwise alert shows up and block 'boxComputer' beeing added to table.
             return;
         }
     }
