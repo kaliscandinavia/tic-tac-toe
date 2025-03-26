@@ -1,25 +1,5 @@
-
-// Wrap my code in a function
-(function() {
-//mousetable function to avid problems or name conflict futher down
-   
-const mousetable = Array.from(document.getElementsByClassName('box'));
-         //   MouseOver & mouseOut for all spot's
-   mousetable.forEach(box => {box.addEventListener('mouseover',myfunction1)});
-   function myfunction1 () {
-   this.classList.add('boxHuman')
-   }
-   mousetable.forEach(box => {box.addEventListener('mouseout',myfunction2)});
-   function myfunction2 () {
-   this.classList.remove('boxHuman')
-    console.log('mouseout','mouseinn')
-}
-
-    // Get a table to play on[array]
-    const table = Array.from(document.querySelectorAll('.box'));
-
-    // Text info for Player
-    let infoTxt = document.querySelector('h1');
+// Get a table to play on [array]
+const table = Array.from(document.querySelectorAll('.box'))
     let currenP = 'o';
     let movesPlayed = [];
 
@@ -42,60 +22,48 @@ const mousetable = Array.from(document.getElementsByClassName('box'));
 
     // GAME START
     function myfunction(e) {
-        // Need index of clicked box
+        // Need index of clicked box.
         const boxArr = Array.from(document.getElementsByClassName('box'));
         const index = boxArr.indexOf(e.target);
-
-        // click add boxHuman
+// click for add player 'o' svg-image.
         if (currenP === 'o') {   
             table[index].classList.add('boxHuman');
             movesPlayed.push(index);
-            
-        } else {
+       }else {
+ //click add player 'x' svg-image.      
             table[index].classList.add('boxComputer');
             movesPlayed.push(index);
+            console.log(index , "table= " + table.length );
         }
-        
         if (checkWinner()) {
             setTimeout(() => {
-                alert(`Player ${currenP} wins! Restart?`);
+                alert(currenP + "_Player wins! Restart?");
                 restart();
             },100);
             return;
         }
-
+//Switch Current Player.
         currenP = currenP == 'o' ? 'x' : 'o';
 
         if (movesPlayed.length === 9) {
             setTimeout(() => {
                 alert('Draw! Restart?');
                 restart();
-            }, 100); // Using setTimeout so 'boxComputer' got time to add itself to table.Otherwise alert shows up and block 'boxComputer' beeing added to table.
-            return;
+            }, 100); // Timeout so boxhuman classList is added before alert.
         }
     }
-function checkWinner() {
+function checkWinner() {   //'map' of box index,and they're classList.value....
     for (let combo of winCombos) {
         const boxes = combo.map(index => table[index]);
         const classes = boxes.map(box => box.classList.value);
+       //...and if every box in a winn-row(e.g [0],[1],[2]),then  return the winn.
         if (classes.every(cls => cls === 'box boxHuman') || classes.every(cls => cls === 'box boxComputer')) {
             return true;
         }
     }
     return false;
 }
-
-
     function restart() {
-        table.forEach(box => {
-            box.classList.remove('boxComputer', 'boxHuman');
-        });
-        infoTxt.innerText = 'NEW GAME';
-        infoTxt.style.color = "green";
-        movesPlayed.length = 0;
-
-        table.forEach(box => {
-            box.addEventListener('click', myfunction, { once: true });
-        });
+       window.location.reload();//Feels safer then manually remove classList and moves etc.
     }
-})();
+
