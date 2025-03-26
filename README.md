@@ -9,3 +9,11 @@ Make RESET fuction.
 Make code readeble.
 Try my.I have pcMove left.
 https://kaliscandinavia.github.io/tic-tac-toe/
+# Update;Add hover by mouseover/out + AI (minimax-algorithm)
+https://kaliscandinavia.github.io/Tic-Tac-Toe-AI
+
+**Code**
+
+```
+https://kaliscandinavia/Tic-Tac-Toe-A
+```
