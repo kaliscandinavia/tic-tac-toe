@@ -7,13 +7,14 @@ Make winning alerts show who winn,or if DRAW.
 Make pcMove,pick random free box.
 Make RESET fuction.
 Make code readeble.
-Try my.I have pcMove left.
+Try,I have pcMove left./I had,Update below.
 https://kaliscandinavia.github.io/tic-tac-toe/
-# Update;Add hover by mouseover/out + AI (minimax-algorithm)
+# Updated:Tic Tac Toe vs AI:
+# Hover by mouseover/out + AI(minimax-algorithm)
 https://kaliscandinavia.github.io/Tic-Tac-Toe-AI
 
 **Code**
 
 ```
-https://kaliscandinavia/Tic-Tac-Toe-A
+https://kaliscandinavia/Tic-Tac-Toe-AI
 ```
