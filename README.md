@@ -15,5 +15,5 @@ https://kaliscandinavia.github.io/Tic-Tac-Toe-vs-AI
 **Code**
 
 ```
-https://kaliscandinavia/Tic-Tac-Toe-vs-AI
+https://github.com/kaliscandinavia/Tic-Tac-Toe-vs-AI
 ```
