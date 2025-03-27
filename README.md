@@ -6,15 +6,14 @@ Make winning array.
 Make winning alerts show who winn,or if DRAW.
 Make pcMove,pick random free box.
 Make RESET fuction.
-Make code readeble.
-Try,I have pcMove left./I had,Update below.
+Make code readeble.//Se update below👇 
 https://kaliscandinavia.github.io/tic-tac-toe/
 # Updated:Tic Tac Toe vs AI:
-# Hover by mouseover/out + AI(minimax-algorithm)
-https://kaliscandinavia.github.io/Tic-Tac-Toe-AI
+# Hover by mouseover/out + AI (minimax-algorithm) + Choose who to start;
+https://kaliscandinavia.github.io/Tic-Tac-Toe-vs-AI
 
 **Code**
 
 ```
-https://kaliscandinavia/Tic-Tac-Toe-AI
+https://kaliscandinavia/Tic-Tac-Toe-vs-AI
 ```
