@@ -9,7 +9,7 @@ Make RESET fuction.
 Make code readeble.//Se update below👇 
 https://kaliscandinavia.github.io/tic-tac-toe/
 # Updated:Tic Tac Toe vs AI:
-# Hover by mouseover/out + AI (minimax-algorithm) + Choose who to start;
+#  AI (minimax-algorithm)Choose who start;
 https://kaliscandinavia.github.io/Tic-Tac-Toe-vs-AI
 
 **Code**
