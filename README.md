@@ -1,11 +1,11 @@
 # Tic,tac,toe challange;
 Remove my js file and make app.js;
 Make Human/Computer Game.
-Make 'boxHuman' hoover when crusing over boxes.Using mouseOut/mouseOver
-Make a winning array.
-Make a winning and a draw alert.
-Make pcMove whi pick random free box.
-Make a RESET fuction.Google ok,not GPT!
+Make 'boxHuman' hoover when mouse-over boxes,use mouseOut/mouseOver.
+Make a winning array.[8 rows]
+Make a winner and a draw alert.
+Make pcMove who pick random free box.
+Make a reset fuction.Google ok,GPT is not!
 - https://kaliscandinavia.github.io/tic-tac-toe/
 ## Updated:Tic Tac Toe vs AI👇 
 # miniMax-algorithm Choose who to start;
